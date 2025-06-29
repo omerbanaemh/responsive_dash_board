@@ -24,7 +24,7 @@ class CustomDrawer extends StatelessWidget {
           SizedBox(
             height: 8,
           ),
-          DrawerItesListView()
+          DrawerItemsListView()
         ],
       ),
     );
