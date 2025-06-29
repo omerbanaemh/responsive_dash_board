@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/dash_board_view.dart';
+import 'package:responsive_dash_board/views/dashboard_view.dart';
 
 
 void main(){
-  runApp(ResponsiveDashBoard());
+  runApp(ResponsiveDashboard());
 }
 
-class ResponsiveDashBoard extends StatelessWidget {
-  const ResponsiveDashBoard
-({super.key});
+class ResponsiveDashboard extends StatelessWidget {
+  const ResponsiveDashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const DashBoardView(
-    );
+    return const DashboardView();
   }
 }
