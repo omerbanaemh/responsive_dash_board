@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/drawer/custom_drawer.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -6,9 +7,11 @@ class DashboardDesktopLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('data'),
-      ),
+      body:  Row(
+        children: [
+          Expanded(child: CustomDrawer()),
+        ],
+      )
     );
   }
 }
