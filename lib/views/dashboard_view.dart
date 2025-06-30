@@ -10,15 +10,13 @@ class DashboardView extends StatelessWidget {
   Widget build(BuildContext context) {
         SizeConfig.init(context);
 
-    return MaterialApp(
-      home: 
+    return  
        Scaffold(
         body: AdaptiveLayoutWidget(
-          mobileLayout: (context) => SizedBox(),
-          tabletLayout:  (context) => SizedBox(),
+          mobileLayout: (context) => SizedBox(child: Center(child: Text('mobile'),),),
+          tabletLayout:  (context) => SizedBox(child: Center(child: Text('tablet'),),),
           desktopLayout: (context) => DashboardDesktopLayout(),
         ),
-      ),
     );
   }
 }
