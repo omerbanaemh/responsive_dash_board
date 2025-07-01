@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/quick_invoice/custom_button.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice/title_text_field.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
@@ -38,25 +39,25 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
-        // SizedBox(
-        //   height: 24,
-        // ),
-        // Row(
-        //   children: [
-        //     Expanded(
-        //       child: CustomButton(
-        //         textColor: Color(0xFF4DB7F2),
-        //         backgourndColor: Colors.transparent,
-        //       ),
-        //     ),
-        //     SizedBox(
-        //       width: 24,
-        //     ),
-        //     Expanded(
-        //       child: CustomButton(),
-        //     ),
-        //   ],
-        // )
+        SizedBox(
+          height: 24,
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: CustomButton(
+                textColor: Color(0xFF4DB7F2),
+                backgourndColor: Colors.transparent,
+              ),
+            ),
+            SizedBox(
+              width: 24,
+            ),
+            Expanded(
+              child: CustomButton(),
+            ),
+          ],
+        )
       ],
     );
   }
