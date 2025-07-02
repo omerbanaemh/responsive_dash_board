@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
+import 'package:responsive_dash_board/widgets/my_card/dots_indicator.dart';
 import 'package:responsive_dash_board/widgets/my_card/my_cards_page_view.dart';
 
 
@@ -45,6 +46,9 @@ class _MyCardsSectionState extends State<MyCardsSection> {
         ),
         const SizedBox(
           height: 20,
+        ),
+        DotsIndicator(
+          currentPageIndex: currentPageIndex,
         ),
       ],
     );
