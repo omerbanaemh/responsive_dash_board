@@ -87,7 +87,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensessItemHeader(
-            imageBackground: Colors.white.withOpacity(0.10000000149011612),
+            imageBackground: Colors.white.withAlpha(25),
             imageColor: Colors.white,
             image: itemModel.image,
           ),
