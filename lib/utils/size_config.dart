@@ -9,5 +9,6 @@ class SizeConfig {
   static init(BuildContext context) {
     height = MediaQuery.sizeOf(context).height;
     width = MediaQuery.sizeOf(context).width;
+    print('width =  $width');
   }
 }
