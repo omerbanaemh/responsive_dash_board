@@ -10,9 +10,9 @@ class AllExpensessItemHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 60),
+        Flexible(
           child: AspectRatio(
             aspectRatio: 1,
             child: Container(
@@ -30,15 +30,18 @@ class AllExpensessItemHeader extends StatelessWidget {
             ),
           ),
         ),
-        const Spacer(),
-        Transform.rotate(
-          angle: -1.57079633 * 2,
-          child: Icon(
-            Icons.arrow_back_ios_new_outlined,
-            color: imageColor == null ? const Color(0xFF064061) : Colors.white,
-          ),
-        ),
-        SizedBox(width: 12,)
+  
+       Flexible(
+  child: FittedBox(
+    child: Transform.rotate(
+      angle: -1.57079633 * 2,
+      child: Icon(
+        Icons.arrow_back_ios_new_outlined,
+        color: imageColor == null ? const Color(0xFF064061) : Colors.white,
+      ),
+    ),
+  ),
+),
       ],
     );
   }
