@@ -14,36 +14,35 @@ class DashboardTabletLayout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(flex: 3, child: CustomDrawer()),
-        SizedBox(width: 32),
+        SizedBox(width: 24),
 
         Expanded(
           flex: 8,
           child: SingleChildScrollView(
             child: Column(
-        children: [
-          Column(
-            children: [
-              SizedBox(height: 40),
-              AllExpensess(),
-              SizedBox(height: 24),
-              QuickInvoice(),
-            ],
-          ),
-          SizedBox(width: 24),
-          Column(
-            children: [
-              SizedBox(height: 40),
-              MyCardsAndTransctionHistorySection(),
-              SizedBox(height: 24),
-              IncomeSection(),
-            ],
-          ),
-          SizedBox(height: 32),
-        ],
-      ),
+              children: [
+                SizedBox(height: 32),
+                Column(
+                  children: [
+                    AllExpensess(),
+                    SizedBox(height: 24),
+                    QuickInvoice(),
+                  ],
+                ),
+                SizedBox(width: 24, height: 24),
+                Column(
+                  children: [
+                    MyCardsAndTransctionHistorySection(),
+                    SizedBox(height: 24),
+                    IncomeSection(),
+                  ],
+                ),
+                SizedBox(height: 32),
+              ],
+            ),
           ),
         ),
-        SizedBox(width: 32),
+        SizedBox(width: 24),
       ],
     );
   }
